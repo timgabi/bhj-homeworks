@@ -11,9 +11,6 @@ for (let i = 0; i < dropItem.length; i++) {
 		dropDown.textContent =
 			dropItem[i].querySelector(".dropdown__link").textContent;
 		dropList.classList.remove("dropdown__list_active");
-
-		if (dropItem[i].querySelector(".dropdown_link")) {
-			return false;
-		}
+		event.preventDefault();
 	};
 }
