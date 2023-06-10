@@ -81,12 +81,19 @@ class Autocomplete {
         value: 'Содержимое атрибута value'
       }
     */
-    return [
-      {
-        text: 'Чубакка',
-        value: '1'
-      }
-    ];
+const result =[];
+const options = Array.from(this.input.options);
+
+options.forEach(el => {
+  if(el.text.toLowerCase().includes(text.toLowerCase())) {
+    result.push({
+      text: el.text,
+      value: el.value
+    })
+  }
+})
+
+    return result;
   }
 }
 
