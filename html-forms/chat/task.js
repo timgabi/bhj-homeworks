@@ -44,11 +44,11 @@ chat.addEventListener("click", () => {
 });
 
 chat.addEventListener("keydown", event => {
-	if (event.code !== "Enter") {
+	if (event.key !== "Enter") {
 		return;
 	}
 
-	if (input.value.length === 0) {
+	if (input.value.trim() == '') {
 		return;
 	}
 
