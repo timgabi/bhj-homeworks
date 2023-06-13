@@ -25,7 +25,13 @@ body {
   width: 100px;
   height: 100px;
   object-fit: contain;
+  display: flex;
 }
+
+.cart__product-remove {
+  width: 6.7vw;
+}
+
 .product {
   display: flex;
   flex-wrap: wrap;
